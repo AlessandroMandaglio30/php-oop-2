@@ -9,6 +9,7 @@ class User
     protected $cart;
     protected $orders;
     protected $creditCards;
+    protected $discount = 20;
     public function __construct($_username, $_password, $_email, $_creditCards = [], $_orders = [], $_cart = [])
     {
         $this->username = $_username;
