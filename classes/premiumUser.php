@@ -8,4 +8,8 @@ class PremiumUser extends User
         $_product->setDiscount(20);
         $this->cart[] = $_product;
     }
+    public function __construct()
+    {
+        $this->_discount = 20;
+    }
 }
